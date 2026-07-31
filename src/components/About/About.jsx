@@ -49,7 +49,7 @@ export const About = () => {
       </h2>
       <div className="mt-6 flex flex-col items-center gap-5 md:flex-row md:gap-10">
         <img
-          src={getImageUrl("about/aboutImage.png")}
+          src={getImageUrl("about.png")}
           alt="Me sitting with a laptop"
           className="hidden w-[35%] rounded-md2 md:block"
         />

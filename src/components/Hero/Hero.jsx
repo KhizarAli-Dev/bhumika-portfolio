@@ -48,7 +48,7 @@ export const Hero = () => {
         </motion.a>
       </motion.div>
       <motion.img
-        src={getImageUrl("hero/heroImage.png")}
+        src={getImageUrl("hero main.png")}
         alt="Hero image of me"
         initial={{ opacity: 0, scale: 0.92 }}
         animate={{
@@ -61,7 +61,7 @@ export const Hero = () => {
           scale: { duration: 0.8, ease: "easeOut" },
           y: { duration: 3, repeat: Infinity, ease: "easeInOut" },
         }}
-        className="z-[1] w-3/4 max-w-[420px] sm:w-3/5 md:w-[45%]"
+        className="z-[1] w-3/4 max-w-[420px] sm:w-3/5 md:w-[45%] rounded-full"
       />
       <div className="absolute -left-[10vw] -top-32 z-0 h-[50vw] max-h-[600px] min-w-[250px] max-w-[600px] w-[50vw] rounded-full bg-secondary/70 blur-[100px]" />
       <div className="absolute -right-[25vw] top-[246px] z-0 h-[50vw] max-h-[600px] min-w-[250px] max-w-[700px] w-[70vw] rounded-full bg-secondary/70 blur-[100px]" />
