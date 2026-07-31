@@ -12,7 +12,11 @@ const containerVariants = {
 
 const itemVariants = {
   hidden: { opacity: 0, y: 24 },
-  show: { opacity: 1, y: 0, transition: { duration: 0.7, ease: [0.22, 1, 0.36, 1] } },
+  show: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.7, ease: [0.22, 1, 0.36, 1] },
+  },
 };
 
 export const Hero = () => {
@@ -24,18 +28,18 @@ export const Hero = () => {
         animate="show"
         className="z-[1] flex max-w-[560px] flex-col items-center text-text md:items-start"
       >
-        <motion.h1
+        <motion.h2
           variants={itemVariants}
-          className="mb-6 bg-gradient-to-r from-white from-70% to-white/0 to-120% bg-clip-text font-roboto text-hero-title font-black leading-[1.1] text-transparent"
+          className="text-3.5xl md:text-4xl mb-6 bg-gradient-to-r from-white from-70% to-white/0 to-120% bg-clip-text font-roboto text-hero-title font-black leading-[1.1] text-transparent"
         >
-          Hi, I'm Ada
-        </motion.h1>
+          Hi, I'm Bhumika Kavita
+        </motion.h2>
         <motion.p
           variants={itemVariants}
           className="mb-7 font-roboto text-hero-desc leading-relaxed text-text-muted"
         >
-          I'm a full-stack developer with 5 years of experience using React and
-          NodeJS. Reach out if you'd like to learn more!
+          Digital Marketing Specialist | SEO & Paid Ads | Helping brands grow
+          online
         </motion.p>
         <motion.a
           variants={itemVariants}
@@ -44,7 +48,7 @@ export const Hero = () => {
           whileTap={{ y: -1 }}
           className="inline-block rounded-full bg-primary px-8 py-3.5 text-btn font-semibold text-text no-underline shadow-[0_0_4px_0_rgba(0,0,0,0.25)] transition-colors duration-200 hover:bg-primary-light"
         >
-          Contact Me
+          Let's Connect
         </motion.a>
       </motion.div>
       <motion.img

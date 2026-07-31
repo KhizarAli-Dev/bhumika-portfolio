@@ -15,22 +15,22 @@ const itemVariants = {
 
 const aboutData = [
   {
-    icon: "about/cursorIcon.png",
-    alt: "Cursor icon",
-    title: "Frontend Developer",
-    text: "I'm a frontend developer with experience in building responsive and optimized sites",
+    icon: "about/digital-marketing.png",
+    alt: "dm icon",
+    title: "Digital Marketing",
+    text: "Managing end-to-end social media campaigns, from strategy to execution, for 15+ clients",
   },
   {
-    icon: "about/serverIcon.png",
-    alt: "Server icon",
-    title: "Backend Developer",
-    text: "I have experience developing fast and optimised back-end systems and APIs",
+    icon: "about/writer.png",
+    alt: "cc icon",
+    title: "Content & Creative",
+    text: "Designing scroll-stopping creatives and trend-aware content using Canva & CapCut",
   },
   {
-    icon: "about/cursorIcon.png",
-    alt: "UI icon",
-    title: "UI Designer",
-    text: "I have designed multiple landing pages and have created design systems as well",
+    icon: "about/seo.png",
+    alt: "seo icon",
+    title: "SEO & Analytics",
+    text: "Optimizing brand visibility with SEO, Google Ads, and SEMrush-driven insights",
   },
 ];
 
@@ -41,17 +41,17 @@ export const About = () => {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, amount: 0.2 }}
       transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
-      className="relative z-[1] mx-[6%] mt-16 rounded-lg2 bg-[#0c0c0c]/60 p-6 sm:mx-[10%] sm:mt-[110px] sm:p-10 md:p-[73px]"
+      className="relative z-[1] mx-[6%] mt-12 rounded-lg2 bg-[#0c0c0c]/60 p-6 sm:mx-[10%] sm:mt-[110px] sm:p-8 md:p-[55px]"
       id="about"
     >
       <h2 className="text-h2 font-bold uppercase tracking-[1.75px] text-text">
-        About
+        About Me
       </h2>
       <div className="mt-6 flex flex-col items-center gap-5 md:flex-row md:gap-10">
         <img
           src={getImageUrl("about.png")}
           alt="Me sitting with a laptop"
-          className="hidden w-[35%] rounded-md2 md:block"
+          className=" w-[35%] rounded-md2 "
         />
         <motion.ul
           variants={listVariants}
