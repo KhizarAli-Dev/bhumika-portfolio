@@ -52,7 +52,7 @@ export const Hero = () => {
         </motion.a>
       </motion.div>
       <motion.img
-        src={getImageUrl("hero main.png")}
+        src={getImageUrl("hero/hero main.png")}
         alt="Hero image of me"
         initial={{ opacity: 0, scale: 0.92 }}
         animate={{

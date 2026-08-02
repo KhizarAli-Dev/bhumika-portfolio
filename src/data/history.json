@@ -1,29 +1,25 @@
 [
   {
-    "role": "Software Engineer",
-    "organisation": "Google",
-    "startDate": "Sept, 2022",
+    "role": "Freelance Digital Marketing Specialist",
+    "organisation": "Self-Employed",
+    "startDate": "2023",
     "endDate": "Present",
-    "experiences": ["Worked on Google Maps", "Reduced load times by 50%"],
-    "imageSrc": "history/google.png"
-  },
-  {
-    "role": "UI Designer",
-    "organisation": "Mirosoft",
-    "startDate": "Aug, 2021",
-    "endDate": "Aug, 2022",
-    "experiences": ["Worked on Windows 11", "Designed the control panel"],
-    "imageSrc": "history/microsoft.png"
-  },
-  {
-    "role": "SWE Intern",
-    "organisation": "Netflix",
-    "startDate": "Apr, 2020",
-    "endDate": "Jun, 2020",
     "experiences": [
-      "Worked on component library",
-      "Helped create UI components"
+      "Managed social media ad campaigns for 15+ clients",
+      "Designed brand creatives using Canva",
+      "Ran paid Instagram campaigns via Meta Ads Manager"
     ],
-    "imageSrc": "history/netflix.png"
+    "imageSrc": "history/freelance.svg"
+  },
+  {
+    "role": "Teacher",
+    "organisation": "KMA Boys Secondary School",
+    "startDate": "July 2024",
+    "endDate": "Present",
+    "experiences": [
+      "Delivered lessons, building communication skills",
+      "Managed classroom activities and time efficiently"
+    ],
+    "imageSrc": "history/teaching.svg"
   }
 ]

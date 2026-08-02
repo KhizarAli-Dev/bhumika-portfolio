@@ -12,7 +12,11 @@ const gridVariants = {
 
 const itemVariants = {
   hidden: { opacity: 0, y: 20 },
-  show: { opacity: 1, y: 0, transition: { duration: 0.5, ease: [0.22, 1, 0.36, 1] } },
+  show: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.5, ease: [0.22, 1, 0.36, 1] },
+  },
 };
 
 export const Experience = () => {
@@ -28,7 +32,23 @@ export const Experience = () => {
       <h2 className="text-h2 font-bold uppercase tracking-[1.75px] text-text">
         Experience
       </h2>
-      <div className="mt-6 flex flex-col items-center gap-8 md:flex-row md:justify-evenly md:items-start">
+
+      {/* Responsive Center Image */}
+      <motion.div
+        variants={itemVariants}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true, amount: 0.3 }}
+        className="flex justify-center mt-6 md:hidden"
+      >
+        <img
+          src={getImageUrl("history/work.png")}
+          alt="Bhumika at work"
+          className="w-40 sm:w-52 md:w-64 rounded-lg2 object-cover shadow-soft"
+        />
+      </motion.div>
+
+      <div className="mt-6 flex flex-col items-center gap-6 md:flex-row md:justify-evenly md:items-start">
         <motion.div
           variants={gridVariants}
           initial="hidden"
@@ -54,7 +74,9 @@ export const Experience = () => {
                     className="w-[55%]"
                   />
                 </motion.div>
-                <p className="font-roboto text-small font-medium">{skill.title}</p>
+                <p className="font-roboto text-small font-medium">
+                  {skill.title}
+                </p>
               </motion.div>
             );
           })}
@@ -64,7 +86,7 @@ export const Experience = () => {
           initial="hidden"
           whileInView="show"
           viewport={{ once: true, amount: 0.2 }}
-          className="flex w-full flex-col gap-4 md:w-[45%]"
+          className="flex w-full flex-col gap-4 md:w-[50%]"
         >
           {history.map((historyItem, id) => {
             return (
@@ -74,11 +96,11 @@ export const Experience = () => {
                 whileHover={{ x: 6 }}
                 className="flex flex-col items-start gap-3 rounded-md2 bg-gradient-to-r from-secondary from-0% to-secondary/0 to-100% p-5 transition-shadow duration-200 hover:shadow-soft sm:flex-row sm:items-center sm:gap-4"
               >
-                <img
+                {/* <img
                   src={getImageUrl(historyItem.imageSrc)}
                   alt={`${historyItem.organisation} Logo`}
                   className="w-11 shrink-0"
-                />
+                /> */}
                 <div className="font-roboto">
                   <h3 className="text-h3 font-medium">{`${historyItem.role}, ${historyItem.organisation}`}</h3>
                   <p className="text-small font-light text-text-muted">{`${historyItem.startDate} - ${historyItem.endDate}`}</p>
