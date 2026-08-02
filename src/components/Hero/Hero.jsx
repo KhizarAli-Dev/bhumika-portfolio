@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 
 import { getImageUrl } from "../../utils";
 import { TypeAnimation } from "react-type-animation";
+import toast from "react-hot-toast";
 
 const containerVariants = {
   hidden: {},
@@ -18,6 +19,15 @@ const itemVariants = {
     y: 0,
     transition: { duration: 0.7, ease: [0.22, 1, 0.36, 1] },
   },
+};
+
+const handleDownload = () => {
+  const link = document.createElement("a");
+  link.href = "/Bhumika_Resume.pdf";
+  link.download = "Bhumika_Resume.pdf";
+  link.click();
+
+  toast.success("CV Downloaded Successfully! 🎉");
 };
 
 export const Hero = () => {
@@ -62,15 +72,31 @@ export const Hero = () => {
           online
         </motion.p>
 
-        <motion.a
+        <motion.div
           variants={itemVariants}
-          href="mailto:bhumikavita21@gmail.com"
-          whileHover={{ y: -3, boxShadow: "0 10px 24px rgba(87,108,188,0.45)" }}
-          whileTap={{ y: -1 }}
-          className="inline-block rounded-full bg-primary px-8 py-3.5 text-btn font-semibold text-text no-underline shadow-[0_0_4px_0_rgba(0,0,0,0.25)] transition-colors duration-200 hover:bg-primary-light"
+          className="flex flex-col gap-4 sm:flex-row"
         >
-          Let's Connect
-        </motion.a>
+          <motion.a
+            href="mailto:bhumikavita21@gmail.com"
+            whileHover={{
+              y: -3,
+              boxShadow: "0 10px 24px rgba(87,108,188,0.45)",
+            }}
+            whileTap={{ y: -1 }}
+            className="inline-block rounded-full bg-primary px-8 py-3.5 text-btn font-semibold text-text no-underline shadow-[0_0_4px_0_rgba(0,0,0,0.25)] transition-colors duration-200 hover:bg-primary-light"
+          >
+            Let's Connect
+          </motion.a>
+
+          <motion.button
+            onClick={handleDownload}
+            whileHover={{ y: -3 }}
+            whileTap={{ y: -1 }}
+            className="inline-block rounded-full border-2 border-primary px-8 py-3.5 text-btn font-semibold text-text no-underline transition-colors duration-200 hover:bg-primary/20"
+          >
+            Download CV
+          </motion.button>
+        </motion.div>
       </motion.div>
 
       <motion.img
