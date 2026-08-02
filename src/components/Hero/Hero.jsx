@@ -2,6 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 
 import { getImageUrl } from "../../utils";
+import { TypeAnimation } from "react-type-animation";
 
 const containerVariants = {
   hidden: {},
@@ -34,16 +35,36 @@ export const Hero = () => {
         >
           Hi, I'm Bhumika Kavita
         </motion.h2>
+        <motion.div
+          variants={itemVariants}
+          className="mb-5 font-roboto text-hero-desc leading-relaxed text-text-muted"
+        >
+          <TypeAnimation
+            sequence={[
+              "Turning Clicks Into Customers",
+              2000,
+              "Growing Brands, One Campaign at a Time",
+              2000,
+              "Data-Driven Marketing Strategist",
+              2000,
+            ]}
+            wrapper="span"
+            speed={50}
+            repeat={Infinity}
+            cursor={true}
+          />
+        </motion.div>
         <motion.p
           variants={itemVariants}
-          className="mb-7 font-roboto text-hero-desc leading-relaxed text-text-muted"
+          className="mb-3 font-outfit text-hero-desc leading-relaxed text-text-muted"
         >
           Digital Marketing Specialist | SEO & Paid Ads | Helping brands grow
           online
         </motion.p>
+
         <motion.a
           variants={itemVariants}
-          href="mailto:myemail@email.com"
+          href="mailto:bhumikavita21@gmail.com"
           whileHover={{ y: -3, boxShadow: "0 10px 24px rgba(87,108,188,0.45)" }}
           whileTap={{ y: -1 }}
           className="inline-block rounded-full bg-primary px-8 py-3.5 text-btn font-semibold text-text no-underline shadow-[0_0_4px_0_rgba(0,0,0,0.25)] transition-colors duration-200 hover:bg-primary-light"
@@ -51,6 +72,7 @@ export const Hero = () => {
           Let's Connect
         </motion.a>
       </motion.div>
+
       <motion.img
         src={getImageUrl("hero/hero main.png")}
         alt="Hero image of me"
