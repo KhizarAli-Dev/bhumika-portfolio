@@ -31,7 +31,7 @@ export const Hero = () => {
       >
         <motion.h2
           variants={itemVariants}
-          className="text-3.5xl md:text-4xl mb-6 bg-gradient-to-r from-white from-70% to-white/0 to-120% bg-clip-text font-roboto text-hero-title font-black leading-[1.1] text-transparent"
+          className="text-3.5xl md:text-4xl mb-6 bg-gradient-to-r from-white from-70% to-white/15 bg-clip-text font-roboto text-hero-title font-black leading-[1.1] text-transparent"
         >
           Hi, I'm Bhumika Kavita
         </motion.h2>
