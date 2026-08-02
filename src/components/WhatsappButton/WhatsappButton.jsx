@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-const WHATSAPP_NUMBER = "923053710949 "; // no + or leading 0, country code included
+const WHATSAPP_NUMBER = "923053710949"; // no + or leading 0, country code included
 const DEFAULT_MESSAGE =
   "Hi Bhumika, I'm interested in your digital marketing services. Could we discuss my project?";
 export const WhatsAppButton = () => {
