@@ -1,0 +1,23 @@
+[
+  {
+    "degree": "Bachelor in Business Administration (BBA)",
+    "institution": "Sindh Madressatul Islam University, Karachi",
+    "startDate": "2026",
+    "endDate": "Continue",
+    "imageSrc": "education/university.svg"
+  },
+  {
+    "degree": "Intermediate",
+    "institution": "KMA Girls Degree College",
+    "startDate": "",
+    "endDate": "2024",
+    "imageSrc": "education/college.svg"
+  },
+  {
+    "degree": "Matriculation",
+    "institution": "KMA Girls Secondary School",
+    "startDate": "",
+    "endDate": "2022",
+    "imageSrc": "education/school.svg"
+  }
+]

@@ -7,7 +7,8 @@ import { useLenis } from "../../lib/LenisContext";
 const navLinks = [
   { href: "#about", label: "About" },
   { href: "#experience", label: "Experience" },
-  { href: "#projects", label: "Projects" },
+  { href: "#education", label: "Education" },
+  // { href: "#projects", label: "Projects" },
   { href: "#contact", label: "Contact" },
 ];
 
@@ -41,7 +42,7 @@ export const Navbar = () => {
         className="text-h3 font-semibold text-text no-underline transition-colors duration-200 hover:text-primary-light"
         href="/"
       >
-        Portfolio
+        Bhumika Portfolio
       </a>
       <div className="relative flex">
         <motion.img

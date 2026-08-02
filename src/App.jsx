@@ -1,9 +1,11 @@
 import { About } from "./components/About/About";
 import { Contact } from "./components/Contact/Contact";
+import { Education } from "./components/Education/Education";
 import { Experience } from "./components/Experience/Experience";
 import { Hero } from "./components/Hero/Hero";
 import { Navbar } from "./components/Navbar/Navbar";
-import { Projects } from "./components/Projects/Projects";
+import { WhatsAppButton } from "./components/WhatsappButton/WhatsappButton";
+// import { Projects } from "./components/Projects/Projects";
 import { LenisProvider } from "./lib/LenisContext";
 
 function App() {
@@ -14,8 +16,10 @@ function App() {
         <Hero />
         <About />
         <Experience />
-        <Projects />
+        <Education />
+        {/* <Projects /> */}
         <Contact />
+        <WhatsAppButton />
       </div>
     </LenisProvider>
   );

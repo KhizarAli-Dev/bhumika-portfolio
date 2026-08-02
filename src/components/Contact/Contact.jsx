@@ -10,13 +10,32 @@ const listVariants = {
 
 const itemVariants = {
   hidden: { opacity: 0, x: 20 },
-  show: { opacity: 1, x: 0, transition: { duration: 0.5, ease: [0.22, 1, 0.36, 1] } },
+  show: {
+    opacity: 1,
+    x: 0,
+    transition: { duration: 0.5, ease: [0.22, 1, 0.36, 1] },
+  },
 };
 
 const links = [
-  { icon: "contact/emailIcon.png", alt: "Email icon", href: "mailto:myemail@email.com", label: "myemail@email.com" },
-  { icon: "contact/linkedinIcon.png", alt: "LinkedIn icon", href: "https://www.linkedin.com/myname", label: "linkedin.com/myname" },
-  { icon: "contact/githubIcon.png", alt: "Github icon", href: "https://www.github.com/myname", label: "github.com/myname" },
+  {
+    icon: "contact/emailIcon.png",
+    alt: "Email icon",
+    href: "mailto:bhumikavita21@gmail.com",
+    label: "bhumikavita21@gmail.com",
+  },
+  {
+    icon: "contact/linkedinIcon.png",
+    alt: "LinkedIn icon",
+    href: "https://www.linkedin.com/in/bhumika-kavita-bhemsee-82a580423/",
+    label: "Bhumika Kavita Bhemsee",
+  },
+  {
+    icon: "contact/instagramicon.png",
+    alt: "Instagram icon",
+    href: "https://www.instagram.com/engagepro._21",
+    label: "@engagepro._21",
+  },
 ];
 
 export const Contact = () => {
