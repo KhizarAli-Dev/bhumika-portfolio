@@ -1,3 +1,4 @@
+import { Toaster } from "react-hot-toast";
 import { About } from "./components/About/About";
 import { Contact } from "./components/Contact/Contact";
 import { Education } from "./components/Education/Education";
@@ -20,6 +21,7 @@ function App() {
         {/* <Projects /> */}
         <Contact />
         <WhatsAppButton />
+        <Toaster />
       </div>
     </LenisProvider>
   );
